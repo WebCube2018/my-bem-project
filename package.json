@@ -48,6 +48,7 @@
     "postcss-short": "^5.0.0",
     "postcss-simple-vars": "^4.0.0",
     "postcss-url": "^7.0.0",
+    "precss": "^3.1.2",
     "rebem-css": "^0.2.0",
     "through2-filter": "^2.0.0",
     "ym": "^0.1.2"

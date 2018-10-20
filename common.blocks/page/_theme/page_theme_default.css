@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+$dark-blue: #0f506f;
+$blue: #9fb9c5;
+$light-green: #33cc33;
+$black: #333333;
+$white: #FFFFFF;
+$white-blue: #d7e1e8;
+
+.page_theme_default {
+  font: 15px 'Roboto', sans-serif;
+  color: $black;
+}

@@ -1,0 +1,10 @@
+block("blocks").elem("href")(
+    content()(function() {
+        var href = this.ctx.content;
+
+        return [{ elem: "first-letter", tag: "span", content: href.slice(0,8) }, href.slice(8)]
+    }),
+    attrs()(function() {
+        return { href: this.ctx.url };
+    })
+);

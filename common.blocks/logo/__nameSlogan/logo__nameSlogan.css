@@ -1,0 +1,6 @@
+
+.logo__nameSlogan {
+  display: block;
+  font: 12px 'Roboto', sans-serif;
+  color: $blue;
+}
