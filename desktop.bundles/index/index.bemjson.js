@@ -86,8 +86,13 @@ module.exports = {
                                     elemMods: { align: "right" },
                                     content: [
                                         {
-                                            block: "text",
-                                            content: "sdfs"
+                                            block: "button-a",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: { href: "#" },
+                                                content: "Заказать сейчас"
+                                            }
                                         }
                                     ]
                                 }

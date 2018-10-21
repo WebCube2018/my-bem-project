@@ -15,7 +15,7 @@ const techs = {
             require('postcss-simple-vars')(),
             require('postcss-calc')(),
             require('postcss-nested'),
-            require('postcss-short'),
+            // require('postcss-short'),
             require('precss'),
             require('rebem-css'),
             require('postcss-url')({ url: 'rebase' }),
