@@ -1,0 +1,7 @@
+block("block-menu").elem("link").elemMod("align", "border-left")(
+    content()(function() {
+        var borderLeft = this.ctx.content;
+
+        return [borderLeft, { elem: "nested-tag", tag: "span", content: "" }]
+    })
+);

@@ -14,9 +14,92 @@ module.exports = {
             block: "header",
             content: [
                 {
+                    block: "top",
+                    content: {
+                        block: "container",
+                        content: {
+                            block: "blocks",
+                            content: [
+                                {
+                                    elem: "side",
+                                    elemMods: { align: "left" },
+                                    content: [
+                                        {
+                                            block: 'block-menu',
+                                            tag: "nav",
+                                            content: {
+                                                elem: "block-items",
+                                                tag: "ul",
+                                                content: [
+                                                    {
+                                                        elem: "item",
+                                                        tag: "li",
+                                                        content: {
+                                                            elem: "link",
+                                                            elemMods: { align: "hover" },
+                                                            tag: "a",
+                                                            attrs: {href: "#"},
+                                                            content: "Продукция и услуги"
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: "item",
+                                                        tag: "li",
+                                                        content: {
+                                                            elem: "link",
+                                                            elemMods: { align: "hover" },
+                                                            tag: "a",
+                                                            attrs: {href: "#"},
+                                                            content: "Как купить"
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: "item",
+                                                        tag: "li",
+                                                        content: {
+                                                            elem: "link",
+                                                            elemMods: { align: "hover" },
+                                                            tag: "a",
+                                                            attrs: {href: "#"},
+                                                            content: "О компании"
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: "item",
+                                                        tag: "li",
+                                                        content: {
+                                                            elem: "link",
+                                                            elemMods: { align: "border-left" },
+                                                            tag: "a",
+                                                            attrs: {href: "#"},
+                                                            content: "Москва"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: "side",
+                                    elemMods: { align: "right" },
+                                    content: [
+                                        {
+                                            block: "text",
+                                            content: "sdfs"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
                     block: "container",
                     content: {
                         block: "blocks",
+                        mix: { block: 'header__blocks' },
                         content: [
                             {
                                 elem: "side",

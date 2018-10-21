@@ -56,7 +56,9 @@
   "scripts": {
     "test": "enb make && enb make clean && gulp",
     "start": "enb server",
-    "build": "enb make"
+    "build": "enb make",
+    "patch": "export PATH=./node_modules/.bin:$PATH",
+    "prod": "YENV=production enb make production -n"
   },
   "private": true
 }

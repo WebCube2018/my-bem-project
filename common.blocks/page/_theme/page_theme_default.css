@@ -2,6 +2,7 @@
 $dark-blue: #0f506f;
 $blue: #9fb9c5;
 $light-green: #33cc33;
+$light-blue: #c0dbe7;
 $black: #333333;
 $white: #FFFFFF;
 $white-blue: #d7e1e8;
@@ -9,4 +10,14 @@ $white-blue: #d7e1e8;
 .page_theme_default {
   font: 15px 'Roboto', sans-serif;
   color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

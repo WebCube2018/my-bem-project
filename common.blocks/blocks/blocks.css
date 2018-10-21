@@ -3,3 +3,6 @@
   align-items: center;
   justify-content: space-between;
 }
+.header__blocks{
+  margin-top: 15px;
+}

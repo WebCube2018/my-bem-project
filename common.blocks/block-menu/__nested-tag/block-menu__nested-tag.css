@@ -1,0 +1,24 @@
+.block-menu__nested-tag {
+  position: relative;
+  margin-left: 15px;
+  &::before, &::after{
+    top: 36%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+  &::after{
+    border-color: rgba(15, 80, 111, 0);
+    border-top-color: #0f506f;
+    border-width: 4px;
+    margin-left: -4px;
+  }
+  &::before{
+    border-color: rgba(192, 219, 231, 0);
+    border-top-color: #c0dbe7;
+    border-width: 7px;
+    margin-left: -7px;
+  }
+}
