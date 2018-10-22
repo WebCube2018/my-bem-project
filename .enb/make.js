@@ -14,7 +14,7 @@ const techs = {
             require('postcss-for'),
             require('postcss-simple-vars')(),
             require('postcss-calc')(),
-            require('postcss-nested'),
+            // require('postcss-nested'),
             require('postcss-short'),
             require('precss'),
             require('rebem-css'),
