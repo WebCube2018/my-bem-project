@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=roboto:400,500,700);
+
+.page, h1 {
+  margin: 0;
+  padding: 0
+}
+
+:root {
+  --dark-blue: #0f506f;
+  --blue: #9fb9c5;
+  --light-green: #33cc33;
+  --light-blue: #c0dbe7;
+  --black: #333333;
+  --white: #ffffff;
+  --white-blue: #d7e1e8;
+  --green: #009933;
+  --font: 'roboto', sans-serif
+}
+
+.page_theme_default {
+  font: 15px 'roboto', sans-serif;
+  color: #333;
+  color: var(--black)
+}
+
+a {
+  text-decoration: none
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+.header {
+  margin-bottom: 40px
+}
+
+.top {
+  width: 100%;
+  background-color: #0f506f;
+  background-color: var(--dark-blue)
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto
+}
+
+.blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.header__blocks {
+  margin-top: 15px
+}
+
+.block-menu__item {
+  display: inline-block;
+  padding: 20px 15px;
+  color: #fff;
+  color: var(--white)
+}
+
+.block-menu__item:first-child {
+  padding: 15px 15px 15px 0
+}
+
+.block-menu__link {
+  color: #fff;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500
+}
+
+.block-menu__nested-tag {
+  position: relative;
+  margin-left: 15px
+}
+
+.block-menu__nested-tag::after, .block-menu__nested-tag::before {
+  top: 36%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute
+}
+
+.block-menu__nested-tag::after {
+  border-color: #0f506f transparent transparent;
+  border-width: 4px;
+  margin-left: -4px
+}
+
+.block-menu__nested-tag::before {
+  border-color: #c0dbe7 transparent transparent;
+  border-width: 7px;
+  margin-left: -7px
+}
+
+.block-menu__link_align_border-left {
+  border-left: 1px solid rgba(159, 185, 197, .2);
+  padding-left: 40px;
+  color: #c0dbe7;
+  color: var(--light-blue)
+}
+
+.blocks__side_align_right {
+
+//flex-grow:.1}.button-a{font-size:16px;font-weight:500}.button-a__link{color:#fff;color:var(--white);background-color:#093;background-color:var(--green);padding:11px 32px 9px 34px;border-radius:4px;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.4s;transition-duration:.4s}.button-a__link:focus,.button-a__link:hover{color:#c0dbe7;color:var(--light-blue)}.image{border:0}.blocks__text,.logo__nameslogan{display:block;color:#9fb9c5;color:var(--blue)}.logo__nameslogan{font:12px 'roboto',sans-serif}.blocks__text{font-size:12px}.blocks__href{color:#3c3;color:var(--light-green);font-weight:700;font-size:23px;text-decoration:none}.blocks__first-letter{color:#0f506f;color:var(--dark-blue);font-size:20px}.search__input{width:239px;font:16px 'roboto',sans-serif;color:#9fb9c5;color:var(--blue);padding:12px 32px 13px 19px;border-radius:4px 0 0 4px;border:solid 1px #d7e1e8;border-right:none;outline:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.search__input:active,.search__input:focus,.search__input:hover{border-color:#0f506f;border-color:var(--dark-blue)}.search__input::-webkit-input-placeholder{color:#9fb9c5;color:var(--blue)}.search__input::-ms-input-placeholder{color:#9fb9c5;color:var(--blue)}.search__input::placeholder{color:#9fb9c5;color:var(--blue)}.search__button{font:500 16px "roboto",sans-serif;color:#0f506f;color:var(--dark-blue);padding:12px 24px 13px 25px;border-radius:0 4px 4px 0;border:solid 1px #0f506f;border:solid 1px var(--dark-blue);outline:0;cursor:pointer;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:background-color;transition-property:background-color}.search__button:hover{background-color:#0f506f;background-color:var(--dark-blue)}.container__h1{font:500 36px 'roboto',sans-serif;font:500 36px var(--font);color:#333;color:var(--black)}.block-menu__link_align_hover{position:relative;-webkit-transition:all .6s;transition:all .6s;padding:5px 0}.block-menu__link_align_hover::before{content:"";width:0;height:.1em;position:absolute;bottom:0;left:50%;background:#0f506f;background:var(--dark-blue);-webkit-transition:all .3s;transition:all .3s}.block-menu__link_align_hover:hover,.search__button:hover{color:#fff;color:var(--white)}.block-menu__link_align_hover:hover::before{width:100%;left:0;background:#fff;background:var(--white)}.container__h1_align_center{display:block;text-align:center}

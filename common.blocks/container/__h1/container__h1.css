@@ -1,0 +1,4 @@
+.container__h1 {
+  font: 500 36px var(--font);
+  color: var(--black);
+}

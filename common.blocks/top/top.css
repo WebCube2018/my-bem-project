@@ -1,4 +1,4 @@
 .top {
     width: 100%;
-  background-color: $dark-blue;
+  background-color: var(--dark-blue);
 }

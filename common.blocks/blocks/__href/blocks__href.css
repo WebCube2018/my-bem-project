@@ -1,5 +1,5 @@
 .blocks__href {
-    color: $light-green;
+    color: var(--light-green);
   font-weight: bold;
   font-size: 23px;
   text-decoration: none;

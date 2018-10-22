@@ -12,6 +12,7 @@ module.exports = {
     content: [
         {
             block: "header",
+            tag: "header",
             content: [
                 {
                     block: "top",
@@ -183,6 +184,26 @@ module.exports = {
                     }
                 }
             ]
+        },
+        {
+            block: "section",
+            tag: "section",
+            content: {
+                block: "container",
+                content: [
+                    {
+                        elem: "head",
+                        tag: "h1",
+                        elemMods: {align: "center"},
+                        content: "Продажа металлопроката от производителя"
+                    },
+                    {
+                        elem: "description",
+                        tag: "p",
+                        content: "Изготовим изделия нужного вам размера и цвета за 2-4 дня"
+                    }
+                ]
+            }
         }
     ]
 };

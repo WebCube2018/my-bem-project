@@ -1,7 +1,7 @@
 .block-menu__item {
     display: inline-block;
   padding: 20px 15px 20px 15px;
-  color: $white;
+  color: var(--white);
   &:first-child{
     padding: 15px 15px 15px 0px;
   }

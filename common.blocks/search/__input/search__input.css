@@ -1,7 +1,7 @@
 .search__input {
   width: 239px;
   font: 16px 'Roboto', sans-serif;
-  color: $blue;
+  color: var(--blue);
   padding: 12px 32px 13px 19px;
   border-radius: 4px 0px 0px 4px;
   border: solid 1px #d7e1e8;
@@ -10,8 +10,8 @@
   user-select: none;
 }
 .search__input:hover, .search__input:active, .search__input:focus {
-  border-color: $dark-blue;
+  border-color: var(--dark-blue);
 }
 .search__input::placeholder {
-  color: $blue;
+  color: var(--blue);
 }

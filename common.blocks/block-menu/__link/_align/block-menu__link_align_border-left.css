@@ -1,7 +1,7 @@
 .block-menu__link_align_border-left {
   border-left: 1px solid rgba(159, 185, 197, 0.2);
   padding-left: 40px;
-  color: $light-blue;
+  color: var(--light-blue);
 }
 
 

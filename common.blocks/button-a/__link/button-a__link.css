@@ -1,7 +1,11 @@
 .button-a__link {
-    color: $white;
-    background-color: $green;
+    color: var(--white);
+    background-color: var(--green);
     padding: 11px 32px 9px 34px;
-    transition-duration: 0.5s;
     border-radius: 4px;
+    transition-property: color;
+    transition-duration: 0.4s;
+    &:hover, &:focus {
+        color: var(--light-blue);
+}
 }

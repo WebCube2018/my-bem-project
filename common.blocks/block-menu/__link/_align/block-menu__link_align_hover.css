@@ -9,15 +9,15 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    background: $dark-blue;
+    background: var(--dark-blue);
     transition: all 0.3s;
   }
   &:hover{
-    color: $white;
+    color: var(--white);
     &::before{
       width: 100%;
       left: 0;
-      background: $white;
+      background: var(--white);
     }
   }
 }

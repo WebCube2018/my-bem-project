@@ -1,4 +1,4 @@
 .blocks__first-letter {
-  color: $dark-blue;
+  color: var(--dark-blue);
   font-size: 20px;
 }
