@@ -1,0 +1,15 @@
+.catalog-element__link-order {
+  display: block;
+  border-radius: 4px;
+  border: solid 1px var(--dark-blue);
+  padding: 10px 46px;
+  font: 16px var(--font);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  color: var(--dark-blue);
+  margin: 0 15px;
+  &:hover, &:focus{
+    color: var(--white);
+    background-color: var(--dark-blue);
+  }
+}

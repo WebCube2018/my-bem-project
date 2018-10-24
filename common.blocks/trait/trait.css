@@ -1,0 +1,8 @@
+.trait {
+  border: 1px dashed var(--blue);
+  width: 75%;
+  position: absolute;
+  top: 24%;
+  z-index: -1;
+  margin-left: 15%;
+}

@@ -1,0 +1,6 @@
+.catalog-element__link {
+  display: block;
+  font: bold 15px var(--font);
+  color: var(--black);
+  margin-top: 5px;
+}

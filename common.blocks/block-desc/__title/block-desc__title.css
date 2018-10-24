@@ -1,0 +1,5 @@
+.block-desc__title {
+  font: 22px var(--font);
+  color: var(--black);
+  margin-bottom: 7px;
+}

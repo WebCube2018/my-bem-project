@@ -1,0 +1,5 @@
+.container__description {
+  font: 18px var(--font);
+  color: var(--black);
+  margin: 12px 0;
+}

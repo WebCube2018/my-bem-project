@@ -1,0 +1,6 @@
+.container__content-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}

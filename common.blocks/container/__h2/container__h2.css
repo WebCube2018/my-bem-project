@@ -1,0 +1,5 @@
+.container__h2 {
+  font: 500 28px var(--font);
+  color: var(--black);
+  margin: 70px 0 38px 0;
+}

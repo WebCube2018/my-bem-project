@@ -1,0 +1,8 @@
+.container__link-style {
+  font: 12px var(--font);
+  color: var(--dark-blue);
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,10 @@
+.catalog-element__item {
+  flex-basis: 192px;
+    padding: 0 9px;
+  &:last-child{
+    padding-right: 0;
+  }
+  &:first-child{
+    padding-left: 0;
+  }
+}

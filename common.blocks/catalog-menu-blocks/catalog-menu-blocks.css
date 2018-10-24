@@ -1,0 +1,14 @@
+.catalog-menu-blocks {
+  height: 138px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 990px) {
+  .catalog-menu-blocks{
+    height: auto;
+  }
+}

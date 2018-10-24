@@ -1,0 +1,22 @@
+.catalog-item {
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(159, 185, 197, 0.2);
+  background-color: var(--white);
+  padding: 40px;
+}
+.catalog-item:first-child {
+  flex-grow: 2;
+  margin-right: 20px;
+}
+
+@media (max-width: 735px) {
+  .catalog-item{
+    width: 100%;
+    box-shadow: 0 0 15px 0 rgba(159, 185, 197, 0.5);
+  }
+  .catalog-item:first-child{
+    flex-grow: unset;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

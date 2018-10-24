@@ -1,0 +1,7 @@
+.menu-items__count-sltyle {
+  display: inline-block;
+  font: 12px var(--font);
+  color: var(--blue);
+  margin-left: 6px;
+  margin-top: 3px;
+}

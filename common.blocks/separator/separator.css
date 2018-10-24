@@ -1,0 +1,6 @@
+.separator {
+    display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--light-blue);
+  margin: 70px 0
+}

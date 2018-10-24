@@ -1,0 +1,5 @@
+.container__h3 {
+  font: 500 36px var(--font);
+  color: var(--black);
+  margin: 80px 0 20px 0;
+}

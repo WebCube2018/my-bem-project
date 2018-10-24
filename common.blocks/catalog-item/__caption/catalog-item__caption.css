@@ -1,0 +1,4 @@
+.catalog-item__caption {
+  font: 500 28px var(--font);
+  color: var(--black);
+}

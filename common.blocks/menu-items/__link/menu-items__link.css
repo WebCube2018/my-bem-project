@@ -1,0 +1,11 @@
+.menu-items__link {
+  display: flex;
+  align-items: center;
+  font: 18px var(--font);
+  color: var(--dark-blue);
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  &:hover, &:focus{
+    opacity: 0.6;
+  }
+}

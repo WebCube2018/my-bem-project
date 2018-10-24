@@ -1,0 +1,6 @@
+.background {
+  display: block;
+  background-color: rgba(15, 80, 111, 0.05);
+  margin: 50px 0;
+  padding: 50px 0;
+}

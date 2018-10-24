@@ -1,0 +1,7 @@
+.catalog-item__desc {
+    display: block;
+  font: 12px var(--font);
+  color: var(--blue);
+  max-width: 270px;
+  margin: 8px 0;
+}

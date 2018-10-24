@@ -1,0 +1,4 @@
+.block-desc__desc {
+  font: 15px var(--font);
+  color: var(--blue);
+}
