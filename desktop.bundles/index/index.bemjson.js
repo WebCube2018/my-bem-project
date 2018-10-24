@@ -734,6 +734,59 @@ module.exports = {
                             elem: "title-h",
                             mix: { block: 'section__align-center' },
                             content: "О компании"
+                        },
+                        {
+                            block: "container-o-kompanii",
+                            content: [
+                                {
+                                    elem: "item",
+                                    content: [
+                                        {
+                                            elem: "title",
+                                            content: "Предприятие «Лесол» работает с 2008 года и специализируется на рулонной холоднокатаной стали:",
+                                        },
+                                        {
+                                            block: "ul-container",
+                                            tag: "ul",
+                                            content: [
+                                                {
+                                                    elem: "li-item",
+                                                    tag: "li",
+                                                    content: "Производство металлопроката: штрипс, профнастил, доборные элементы для кровли и стеновых сэндвич–панелей, водосточные системы, лист оцинкованный с полимерным покрытием."
+                                                },
+                                                {
+                                                    elem: "li-item",
+                                                    tag: "li",
+                                                    content: "Услуги по обработке рулонной стали: отмотка от рулона, продольно-поперечный роспуск и наносим полимерные покрытия на рулоны."
+                                                },
+                                                {
+                                                    elem: "li-item",
+                                                    tag: "li",
+                                                    content: "Под заказ работаем с материалом заказчика."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: "item",
+                                    content: {
+                                        elem: "img",
+                                        tag: "img",
+                                        attrs: {src: "../../img/6589a9b061.jpg"}
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            block: "conent-certificate",
+                            content: [
+                                {
+                                    elem: "img",
+                                    tag: "img",
+                                    attrs: {src: "../../img/"}
+                                }
+                            ]
                         }
                     ]
                 }

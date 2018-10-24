@@ -1,0 +1,8 @@
+.ul-container__li-item {
+    line-height: 1.4;
+  margin-bottom: 15px;
+  margin-left: 16px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

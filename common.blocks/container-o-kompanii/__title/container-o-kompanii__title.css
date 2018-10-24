@@ -1,0 +1,6 @@
+.container-o-kompanii__title {
+  font: 18px var(--font);
+  line-height: 1.44;
+  color: var(--black);
+  margin-bottom: 10px;
+}
