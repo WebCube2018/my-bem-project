@@ -1463,7 +1463,23 @@ module.exports = {
                                         elem: "img-logo",
                                         tag: "img",
                                         attrs: {src: "../../img/invalid-name_2.svg"}
-                                    }
+                                    },
+                                },
+                                {
+                                    elem: "text",
+                                    content: "© 2008-2018 Завод «Лесол»"
+                                },
+                                {
+                                    elem: "text-link",
+                                    tag: "a",
+                                    attrs: {href: "#"},
+                                    content: "Политика конфиденциальности"
+                                },
+                                {
+                                    elem: "link",
+                                    tag: "a",
+                                    attrs: {href: "#"},
+                                    content: "Карта сайта"
                                 }
                             ]
                         },
