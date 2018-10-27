@@ -1,0 +1,9 @@
+.form-order__text-title {
+  display: block;
+  font: 500 28px var(--font);
+  color: #FFF;
+  padding: 20px 95px;
+  text-align: center;
+  background-color: var(--dark-blue);
+  border-radius: 10px 10px 0 0;
+}

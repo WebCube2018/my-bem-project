@@ -1,0 +1,12 @@
+.block-tabs__li_block_active {
+    &:before{
+      content: "";
+      height: 0.1em;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      background: #0f506f;
+      background: var(--dark-blue);
+    }
+}

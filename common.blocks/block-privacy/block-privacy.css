@@ -1,0 +1,9 @@
+.block-privacy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    font: 12px var(--font);
+  color: var(--blue);
+  padding: 10px 0 50px 0;
+  text-align: center;
+}

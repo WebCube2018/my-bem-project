@@ -782,13 +782,437 @@ module.exports = {
                             block: "conent-certificate",
                             content: [
                                 {
-                                    elem: "img",
-                                    tag: "img",
-                                    attrs: {src: "../../img/"}
+                                    elem: "item",
+                                    content: {
+                                        elem: "img",
+                                        tag: "img",
+                                        attrs: {src: "../../img/group-36.svg"}
+                                    }
+                                },
+                                {
+                                    elem: "item",
+                                    content: {
+                                        elem: "text",
+                                        content: "Вся производимая продукция сертифицирована и соответствует требованиям ГОСТ и ТУ"
+                                    }
                                 }
+                            ]
+                        },
+                        {
+                            block: "buuton",
+                            content: {
+                                elem: "link",
+                                mix: { block: 'catalog-element__link-order' },
+                                tag: "a",
+                                attrs: {href: "#"},
+                                content: "Виртуальный тур по предприятию"
+                            }
+                        },
+                        {
+                            block: "blocks-worker",
+                            content: [
+                                {
+                                    elem: "text",
+                                    mix: { block: "container__title-h section__align-center"},
+                                    content: "Сотрудники",
+                                },
+                                {
+                                    block: "worker-item-block",
+                                    content: [
+                                        {
+                                            content: "Руслан",
+                                            img: "../../img/work/name-1.png",
+                                        },
+                                        {
+                                            content: "Зураб",
+                                            img: "../../img/work/name-2.png",
+                                        },
+                                        {
+                                            content: "Эльмира",
+                                            img: "../../img/work/name-3.png",
+                                        },
+                                        {
+                                            content: "Константин",
+                                            img: "../../img/work/name-4.png",
+                                        },
+                                        {
+                                            content: "Пётр",
+                                            img: "../../img/work/name-5.png",
+                                        },
+                                        {
+                                            content: "Анна",
+                                            img: "../../img/work/name-6.png",
+                                        },
+                                        {
+                                            content: "Константин",
+                                            img: "../../img/work/name-7.png",
+                                        },
+                                        {
+                                            content: "Георгий",
+                                            img: "../../img/work/name-8.png",
+                                        },
+                                        {
+                                            content: "Анна",
+                                            img: "../../img/work/name-9.png",
+                                        },
+                                        {
+                                            content: "Гарик",
+                                            img: "../../img/work/name-10.png",
+                                        }
+
+                                    ].map(function(item) {
+                                        return {
+                                            elem: 'item',
+                                            mods: { image: 'yes' },
+                                            content : [
+                                                {
+                                                    block: 'image',
+                                                    mix: { block: 'blocks-worker', elem: 'image' },
+                                                    alt: item.content,
+                                                    url: item.img
+                                                },
+                                                {
+                                                    elem: 'name-text',
+                                                    content: item.content
+                                                }
+                                            ]
+                                        };
+                                    }),
+                                },
                             ]
                         }
                     ]
+                },
+                {
+                    block: "separator",
+                    mods: { margin: "top"},
+                },
+                {
+                    block: "container",
+                    mix: [{ block: 'block-tabs', js: true }],
+                    content: {
+                        block: "block-tabs",
+                        content: [
+                            {
+                                elem: "ul",
+                                tag: "ul",
+                                content: [
+                                    {
+                                        elem: "li",
+                                        tag: "li",
+                                        attrs: {dataitem: "#tab-1"},
+                                        elemMods: {block: "active"},
+                                        content: "Сертификаты",
+                                    },
+                                    {
+                                        elem: "li",
+                                        tag: "li",
+                                        attrs: {dataitem: "#tab-2"},
+                                        content: "Благодарственные письма",
+                                    }
+                                ]
+                            },
+                            {
+                                elem: "tab-item",
+                                content: [
+                                    {
+                                        elem: "content",
+                                        attrs: {id: "tab-1",style: "display: block"},
+                                        content: {
+                                            block: "flex-content",
+                                            content: [
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/1.png"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/2.jpg"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/3.jpg"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/4.jpg"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/5.jpg"},
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        elem: "content",
+                                        attrs: {id: "tab-2"},
+                                        content: {
+                                            block: "flex-content",
+                                            content: [
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/1.png"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/2.jpg"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/4.jpg"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/3.jpg"},
+                                                    }
+                                                },
+                                                {
+                                                    elem: "item",
+                                                    content: {
+                                                        elem: "img",
+                                                        tag: "img",
+                                                        attrs: {src: "../../img/certificate/5.jpg"},
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    block: "background",
+                    mods: {padding: "bottom"},
+                    content: {
+                        block: "container",
+                        content: {
+                            block: "flex-content",
+                            mods: { direction: "column" },
+                            content: {
+                                block: "form-order",
+                                tag: "form",
+                                content: [
+                                    {
+                                        elem: "text-title",
+                                        content: "Заказать продукцию или услугу",
+                                    },
+                                    {
+                                        elem: "block-form",
+                                        content: [
+                                            {
+                                                elem: "block-input",
+                                                mix: "flex-content flex-content_direction_column",
+                                                content: [
+                                                    {
+                                                        elem: "text",
+                                                        mix: { block: 'section__align-center' },
+                                                        content: "Сообщим цену по телефону в течение 5 минут",
+
+                                                    },
+                                                    {
+                                                        elem: "input",
+                                                        tag: "input",
+                                                        attrs: {type: "tel", placeholder: "Номер телефона"}
+                                                    },
+                                                    {
+                                                        elem: "textarea",
+                                                        tag: "textarea",
+                                                        attrs: {placeholder: "Здравствуйте, я хочу заказать…", rows: "3", cols: "45", name: "text"}
+                                                    },
+                                                    {
+                                                        elem: "file",
+                                                        content: {
+                                                            block: "file-upload",
+                                                            content: {
+                                                                elem: "label",
+                                                                tag: "label",
+                                                                content: [
+                                                                    {
+                                                                        elem: "input",
+                                                                        tag: "input",
+                                                                        attrs: {type: "file"},
+                                                                    },
+                                                                    {
+                                                                        elem: "icon",
+                                                                    },
+                                                                    {
+                                                                        elem: "text",
+                                                                        tag: "span",
+                                                                        content: "Прикрепить файл"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: "button",
+                                                        tag: "button",
+                                                        attrs: {type: "button"},
+                                                        content: "Узнать цену и получить консультацию"
+                                                    },
+                                                ]
+                                            },
+                                            {
+                                                block: "block-privacy",
+                                                content: [
+                                                    {
+                                                        elem: "text",
+                                                        content: "Нажимая на кнопку вы соглашаетесь с "
+                                                    },
+                                                    {
+                                                        elem: "link",
+                                                        tag: "a",
+                                                        attrs: {href: "#"},
+                                                        content: "политикой конфиденциальности"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    block: "container",
+                    content: {
+                        block: "block-question",
+                        content: [
+                            {
+                                elem: "text-question",
+                                mix: { block: "container__title-h section__align-center"},
+                                content: "Остались вопросы?",
+                            },
+                            {
+                                elem: "text-work",
+                                mix: {block: "blocks__text section__align-center"},
+                                tag: "span",
+                                content: "Звоните ежедневно, 9:00—18:00"
+                            },
+                            {
+                                elem: "href",
+                                tag: "a",
+                                mix: {block: "section__align-center"},
+                                url: "tel:+74951533109",
+                                content: "+7 (495) 153-31-09"
+                            },
+                            {
+                                elem: "text-slogan",
+                                mix: { block: "section__align-center"},
+                                content: "Консультанты помогут подобрать материал и рассчитают количество, стоимость и срок производства ",
+                            },
+                            {
+                                elem: "block-email",
+                                mix: { block: "section__align-center"},
+                                content: [
+                                    {
+                                        elem: "text",
+                                        content: "Отправьте заявку через сайт или на почту"
+                                    },
+                                    {
+                                        elem: "link",
+                                        tag: "a",
+                                        attrs: {href: "mailto:zakaz@lesollp.ru"},
+                                        content: "zakaz@lesollp.ru"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    block: "separator",
+                },
+                {
+                    block: "container",
+                    content: {
+                        block: "container",
+                        mix: [{ block: 'block-tabs', js: true }],
+                        content: {
+                            block: "block-tabs",
+                            content: [
+                                {
+                                    elem: "ul",
+                                    tag: "ul",
+                                    content: [
+                                        {
+                                            elem: "li",
+                                            tag: "li",
+                                            attrs: {dataitem: "#tab-3"},
+                                            elemMods: {block: "active"},
+                                            content: "Центральный офис",
+                                        },
+                                        {
+                                            elem: "li",
+                                            tag: "li",
+                                            attrs: {dataitem: "#tab-4"},
+                                            content: "Производство",
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: "tab-item",
+                                    content: [
+                                        {
+                                            elem: "content",
+                                            attrs: {id: "tab-3",style: "display: block"},
+                                            content: {
+                                                block: "map-content",
+                                                content: "Контент 1"
+                                            }
+                                        },
+                                        {
+                                            elem: "content",
+                                            attrs: {id: "tab-4"},
+                                            content: {
+                                                block: "map-content",
+                                                content: "Контент 2"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
                 }
             ]
         }

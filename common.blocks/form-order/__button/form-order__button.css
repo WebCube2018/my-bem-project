@@ -1,0 +1,15 @@
+.form-order__button {
+  font: 500 18px var(--font);
+  color: var(--white);
+  padding: 18px 0;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: var(--green);
+  cursor: pointer;
+  border: 0;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  &:hover, &:focus{
+    background-color: var(--dark-green);
+  }
+}

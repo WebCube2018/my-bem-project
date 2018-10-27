@@ -1,0 +1,8 @@
+.file-upload__text {
+  font: 12px var(--font);
+  color: var(--dark-blue);
+  line-height: 1.67;
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
+}

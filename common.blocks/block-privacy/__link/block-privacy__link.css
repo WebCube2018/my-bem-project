@@ -1,0 +1,8 @@
+.block-privacy__link {
+  color: var(--blue);
+  padding-left: 4px;
+  text-decoration: underline;
+  &:hover, &:focus{
+    text-decoration: none;
+  }
+}

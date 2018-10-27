@@ -1,0 +1,11 @@
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  width: 130px;
+  border-radius: 3px;
+  padding: 5px 0 20px 2px;
+  text-align: right;
+  &:hover{
+    text-decoration: underline;
+  }
+}

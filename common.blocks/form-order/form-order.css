@@ -1,0 +1,9 @@
+.form-order {
+  display: block;
+  position: relative;
+  top: -95px;
+  border-radius: 10px;
+  box-shadow: 0 0 35px 0 rgba(159, 185, 197, 0.5);
+  max-width: 616px;
+  margin: 0 auto;
+}

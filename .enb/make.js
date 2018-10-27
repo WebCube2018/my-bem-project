@@ -47,38 +47,38 @@ const techs = {
     ];
 
 
-    fse = require('fs-extra'),
-    path = require('path'),
-    glob = require('glob'),
-
-    rootDir = path.join(__dirname, '..');
+    // fse = require('fs-extra'),
+    // path = require('path'),
+    // glob = require('glob'),
+    //
+    // rootDir = path.join(__dirname, '..');
 
 module.exports = function(config) {
     const isProd = process.env.YENV === 'production';
-
-    /**
-     * Task for build dist package, it will create folder 'dist'
-     * and put in it *.html, *.css, *.js, img dir
-     * depend: .borschik config
-     */
-    config.task('dist', function (task) {
-
-        // build targets and copy it to 'dist' folder
-        function copyTargets(buildInfo) {
-            buildInfo.builtTargets.forEach(function (target) {
-                var src = path.join(rootDir, target),
-                    dst = path.join(rootDir, 'dist', path.basename(target));
-
-                fse.copySync(src, dst);
-            });
-        }
-
-        return task.buildTargets(glob.sync('*.bundles/*'))
-            .then(function (buildInfo) {
-                copyTargets(buildInfo);
-                task.log('Dist was created.');
-            });
-    });
+    //
+    // /**
+    //  * Task for build dist package, it will create folder 'dist'
+    //  * and put in it *.html, *.css, *.js, img dir
+    //  * depend: .borschik config
+    //  */
+    // config.task('dist', function (task) {
+    //
+    //     // build targets and copy it to 'dist' folder
+    //     function copyTargets(buildInfo) {
+    //         buildInfo.builtTargets.forEach(function (target) {
+    //             var src = path.join(rootDir, target),
+    //                 dst = path.join(rootDir, 'dist', path.basename(target));
+    //
+    //             fse.copySync(src, dst);
+    //         });
+    //     }
+    //
+    //     return task.buildTargets(glob.sync('*.bundles/*'))
+    //         .then(function (buildInfo) {
+    //             copyTargets(buildInfo);
+    //             task.log('Dist was created.');
+    //         });
+    // });
 
     config.nodes('*.bundles/*', function(nodeConfig) {
         nodeConfig.addTechs([

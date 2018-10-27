@@ -1,0 +1,8 @@
+.block-question__link {
+    display: inline-block;
+  padding-left: 4px;
+  color: var(--dark-blue);
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
+}

@@ -3,9 +3,10 @@
     background-color: var(--green);
     padding: 11px 32px 9px 34px;
     border-radius: 4px;
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 0.4s;
+    border: 0;
     &:hover, &:focus {
-        color: var(--light-blue);
+        background-color: var(--dark-green);
 }
 }

@@ -1,0 +1,15 @@
+.form-order__textarea {
+  max-width: 100%;
+  text-align: center;
+  padding: 22px 10px;
+  background-color: #f3f6f8;
+  margin-bottom: 10px;
+  font: 18px var(--font);
+  color: var(--blue);
+  line-height: 1.44;
+  border-radius: 4px;
+  border: 0;
+  &::placeholder{
+    color: var(--blue);
+  }
+}

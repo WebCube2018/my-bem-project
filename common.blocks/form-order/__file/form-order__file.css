@@ -1,0 +1,4 @@
+.form-order__file {
+  display: flex;
+  flex-direction: row-reverse;
+}

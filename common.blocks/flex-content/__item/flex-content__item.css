@@ -1,0 +1,10 @@
+.flex-content__item {
+    padding: 0 10px;
+    flex-basis: 177px;
+    &:last-child {
+        padding-right: 0;
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+}

@@ -4,7 +4,6 @@
   padding: 12px 24px 13px 25px;
   border-radius: 0px 4px 4px 0px;
   border: solid 1px var(--dark-blue);
-  outline: none;
   cursor: pointer;
   transition-duration: 0.5s;
   transition-property: background-color;

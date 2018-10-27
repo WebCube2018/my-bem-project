@@ -1,0 +1,6 @@
+.worker-item-block__name-text {
+  font: 18px var(--font);
+  line-height: 1.44;
+  text-align: center;
+  margin-bottom: 40px;
+}

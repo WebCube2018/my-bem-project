@@ -1,0 +1,8 @@
+.conent-certificate {
+    display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}

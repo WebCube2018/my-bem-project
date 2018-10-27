@@ -1,0 +1,27 @@
+.block-tabs__li {
+  display: inline-block;
+    font: 500 28px var(--font);
+  color: var(--dark-blue);
+  padding: 0 6px 10px 6px;
+  position: relative;
+  transition: all 0.6s;
+  margin-right: 34px;
+  cursor: pointer;
+  &:last-child{
+    margin-right: 0;
+  }
+  &::before{
+    content: "";
+    width: 0;
+    height: 0.1em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s;
+  }
+  &:hover::before{
+    width: 100%;
+    left: 0;
+    background: var(--dark-blue);
+  }
+}
