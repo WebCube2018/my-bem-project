@@ -1163,58 +1163,329 @@ module.exports = {
                     block: "separator",
                 },
                 {
-                    block: "container",
-                    content: {
-                        block: "container",
-                        mix: [{ block: 'block-tabs', js: true }],
-                        content: {
-                            block: "block-tabs",
+                    block: "block-tabs",
+                    mods: {margin: "bottom"},
+                    content: [
+                        {
+                            elem: "ul",
+                            tag: "ul",
+                            mix: {block: "container"},
                             content: [
                                 {
-                                    elem: "ul",
-                                    tag: "ul",
+                                    elem: "li",
+                                    tag: "li",
+                                    attrs: {dataitem: "#tab-3"},
+                                    elemMods: {block: "active"},
+                                    content: "Центральный офис",
+                                },
+                                {
+                                    elem: "li",
+                                    tag: "li",
+                                    attrs: {dataitem: "#tab-4"},
+                                    content: "Производство",
+                                }
+                            ]
+                        },
+                        {
+                            elem: "tab-item",
+                            content: [
+                                {
+                                    elem: "content",
+                                    attrs: {id: "tab-3",style: "display: block"},
+                                    mix: [{ block: 'map-content', js: true }],
+                                    content: {
+                                        block: "map-content",
+                                        content: [
+                                            {
+                                                elem: "iframe",
+                                                tag: "iframe",
+                                                attrs: {src: "https://yandex.ru/map-widget/v1/?um=constructor%3A1b56b7909fc6d1da248ea1435c482582672933b8310cb7b51148e89ba91937d9&amp;source=constructor",  width:"100%", height: "397", frameborder:"0"}
+                                            },
+                                            {
+                                                elem: "text-info",
+                                                content: [
+                                                    {
+                                                        elem: "dl",
+                                                        tag: "dl",
+                                                        content: [
+                                                            {
+                                                                elem: "dt",
+                                                                tag: "dt",
+                                                                content: "Адрес:"
+                                                            },
+                                                            {
+                                                                elem: "dd",
+                                                                tag: "dd",
+                                                                content: "111033, г. Москва, ул. Золоторожский Вал, 11с9"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: "dl",
+                                                        tag: "dl",
+                                                        content: [
+                                                            {
+                                                                elem: "dt",
+                                                                tag: "dt",
+                                                                content: "E-mail:"
+                                                            },
+                                                            {
+                                                                elem: "dd",
+                                                                tag: "dd",
+                                                                content: {
+                                                                    elem: "href",
+                                                                    tag: "a",
+                                                                    attrs: {href: "mailto:zakaz@lesollp.ru"},
+                                                                    content: "zakaz@lesollp.ru"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: "dl",
+                                                        tag: "dl",
+                                                        content: [
+                                                            {
+                                                                elem: "dt",
+                                                                tag: "dt",
+                                                                content: "Работает:"
+                                                            },
+                                                            {
+                                                                elem: "dd",
+                                                                tag: "dd",
+                                                                content: "пн-пт c 9:00 до 18:00"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    elem: "content",
+                                    attrs: {id: "tab-4"},
+                                    mix: [{ block: 'map-content', js: true }],
+                                    content: {
+                                        block: "map-content",
+                                        content: "Контент 2"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block: "container",
+                    content: [
+                        {
+                            elem: "h3",
+                            tag: "h3",
+                            mix: { block: 'section__align-center' },
+                            elemMods: {margin: "top"},
+                            content: "Недавно вы смотрели"
+                        },
+                        {
+                            block: "catalog-element",
+                            content: [
+                                {
+                                    elem: "item",
                                     content: [
                                         {
-                                            elem: "li",
-                                            tag: "li",
-                                            attrs: {dataitem: "#tab-3"},
-                                            elemMods: {block: "active"},
-                                            content: "Центральный офис",
+                                            elem: "img",
+                                            tag: "img",
+                                            attrs: {src: "../../img/95835030a6.jpg"}
                                         },
                                         {
-                                            elem: "li",
-                                            tag: "li",
-                                            attrs: {dataitem: "#tab-4"},
-                                            content: "Производство",
+                                            elem: "link",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Профлист С8-1150 "
+                                        },
+                                        {
+                                            elem: "text-price",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "p",
+                                            content: "от 230 руб./м"
+                                        },
+                                        {
+                                            elem: "link-order",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Заказать"
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "tab-item",
+                                    elem: "item",
                                     content: [
                                         {
-                                            elem: "content",
-                                            attrs: {id: "tab-3",style: "display: block"},
-                                            content: {
-                                                block: "map-content",
-                                                content: "Контент 1"
-                                            }
+                                            elem: "img",
+                                            tag: "img",
+                                            attrs: {src: "../../img/479c62e275.jpg"}
                                         },
                                         {
-                                            elem: "content",
-                                            attrs: {id: "tab-4"},
-                                            content: {
-                                                block: "map-content",
-                                                content: "Контент 2"
-                                            }
+                                            elem: "link",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Профлист С8-1150 "
+                                        },
+                                        {
+                                            elem: "text-price",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "p",
+                                            content: "от 230 руб./м"
+                                        },
+                                        {
+                                            elem: "link-order",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Заказать"
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: "item",
+                                    content: [
+                                        {
+                                            elem: "img",
+                                            tag: "img",
+                                            attrs: {src: "../../img/95835030a6.jpg"}
+                                        },
+                                        {
+                                            elem: "link",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Профлист С8-1150 "
+                                        },
+                                        {
+                                            elem: "text-price",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "p",
+                                            content: "от 230 руб./м"
+                                        },
+                                        {
+                                            elem: "link-order",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Заказать"
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: "item",
+                                    content: [
+                                        {
+                                            elem: "img",
+                                            tag: "img",
+                                            attrs: {src: "../../img/479c62e275.jpg"}
+                                        },
+                                        {
+                                            elem: "link",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Профлист С8-1150 "
+                                        },
+                                        {
+                                            elem: "text-price",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "p",
+                                            content: "от 230 руб./м"
+                                        },
+                                        {
+                                            elem: "link-order",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Заказать"
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: "item",
+                                    content: [
+                                        {
+                                            elem: "img",
+                                            tag: "img",
+                                            attrs: {src: "../../img/95835030a6.jpg"}
+                                        },
+                                        {
+                                            elem: "link",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Профлист С8-1150 "
+                                        },
+                                        {
+                                            elem: "text-price",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "p",
+                                            content: "от 230 руб./м"
+                                        },
+                                        {
+                                            elem: "link-order",
+                                            mix: { block: 'section__align-center' },
+                                            tag: "a",
+                                            attrs: {href: "#"},
+                                            content: "Заказать"
                                         }
                                     ]
                                 }
                             ]
                         }
-                    }
+                    ]
                 }
             ]
+        },
+        {
+            block: "footer",
+            tag: "footer",
+            content: {
+                block: "container",
+                content: {
+                    block: "block-footer",
+                    content: [
+                        {
+                            elem: "block-item",
+                            content: [
+                                {
+                                    elem: "link",
+                                    tag: "a",
+                                    attrs: {href: "/"},
+                                    content: {
+                                        elem: "img-logo",
+                                        tag: "img",
+                                        attrs: {src: "../../img/invalid-name_2.svg"}
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            elem: "block-item",
+                            content: "блок-2"
+                        },
+                        {
+                            elem: "block-item",
+                            content: "блок-3"
+                        },
+                        {
+                            elem: "block-item",
+                            content: "блок-4"
+                        },
+                        {
+                            elem: "block-item",
+                            content: "блок-5"
+                        }
+                    ]
+                }
+            }
         }
     ]
 };

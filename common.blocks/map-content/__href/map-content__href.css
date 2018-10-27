@@ -1,0 +1,7 @@
+.map-content__href {
+  font-weight: 500;
+  color: var(--dark-blue);
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
+}

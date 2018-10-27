@@ -1,0 +1,5 @@
+.map-content__dt {
+    font: 500 15px var(--font);
+  line-height: 1.4;
+  width: 90px;
+}
