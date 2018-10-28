@@ -1,0 +1,19 @@
+.flex-content__bg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  &:hover::before, &:focus::before{
+    background: url("/img/google-drive-pdf-file.svg") no-repeat center center;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  &:hover, &:focus{
+    background-color: rgba(51, 51, 51, 0.6);
+  }
+}

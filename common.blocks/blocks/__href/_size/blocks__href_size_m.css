@@ -1,0 +1,6 @@
+.blocks__href_size_m {
+    font-size: 20px;
+  &>span.blocks__first-letter{
+    font-size: 18px;
+  }
+}

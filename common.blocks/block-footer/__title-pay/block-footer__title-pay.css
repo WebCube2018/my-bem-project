@@ -1,0 +1,6 @@
+.block-footer__title-pay {
+  font: 15px var(--font);
+  color: var(--white);
+  margin: 33px 0 14px 0;
+  line-height: 1.4;
+}

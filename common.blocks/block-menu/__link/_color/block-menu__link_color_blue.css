@@ -1,0 +1,6 @@
+.block-menu__link_color_blue {
+  color: var(--dark-blue);
+  &:hover, &:focus{
+    color: var(--dark-blue);
+  }
+}

@@ -1,0 +1,8 @@
+.blocks_margin_top {
+ margin-top: 10px;
+}
+@media (max-width: 920px) {
+ .blocks_margin_top{
+  display: none;
+ }
+}

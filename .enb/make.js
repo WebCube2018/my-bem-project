@@ -94,7 +94,6 @@ module.exports = function(config) {
                 target: '?.css',
                 oneOfSourceSuffixes: ['post.css', 'css'],
                 plugins: techs.postcssPlugins,
-                comments: true
             }],
 
             // bemtree

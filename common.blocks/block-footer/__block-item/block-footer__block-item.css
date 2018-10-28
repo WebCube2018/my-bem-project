@@ -1,3 +1,6 @@
 .block-footer__block-item {
-    flex-basis: 200px;
+    flex-basis: 192px;
+    &:first-child{
+        margin-right: 60px;
+    }
 }

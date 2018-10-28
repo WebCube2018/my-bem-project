@@ -18,68 +18,140 @@ module.exports = {
                     block: "top",
                     content: {
                         block: "container",
-                        content: {
+                        content: [
+                            {
+                                block: "blocks",
+                                content: [
+                                    {
+                                        elem: "side",
+                                        elemMods: { align: "left" },
+                                        content: [
+                                            {
+                                                block: "block-menu",
+                                                tag: "nav",
+                                                content: {
+                                                    elem: "block-items",
+                                                    tag: "ul",
+                                                    content: [
+                                                        {
+                                                            elem: "item",
+                                                            tag: "li",
+                                                            content: {
+                                                                elem: "link",
+                                                                elemMods: { align: "hover" },
+                                                                tag: "a",
+                                                                attrs: {href: "#"},
+                                                                content: "Продукция и услуги"
+                                                            }
+                                                        },
+                                                        {
+                                                            elem: "item",
+                                                            tag: "li",
+                                                            content: {
+                                                                elem: "link",
+                                                                elemMods: { align: "hover" },
+                                                                tag: "a",
+                                                                attrs: {href: "#"},
+                                                                content: "Как купить"
+                                                            }
+                                                        },
+                                                        {
+                                                            elem: "item",
+                                                            tag: "li",
+                                                            content: {
+                                                                elem: "link",
+                                                                elemMods: { align: "hover" },
+                                                                tag: "a",
+                                                                attrs: {href: "#"},
+                                                                content: "О компании"
+                                                            }
+                                                        },
+                                                        {
+                                                            elem: "item",
+                                                            tag: "li",
+                                                            content: {
+                                                                elem: "link",
+                                                                elemMods: { align: "border-left" },
+                                                                tag: "a",
+                                                                attrs: {href: "#"},
+                                                                content: "Москва"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: "side",
+                                        elemMods: { align: "right" },
+                                        content: [
+                                            {
+                                                block: "button-a",
+                                                content: {
+                                                    elem: "link",
+                                                    tag: "a",
+                                                    attrs: { href: "#" },
+                                                    content: "Заказать сейчас"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    block: "container",
+                    content: [
+                        {
                             block: "blocks",
+                            mix: { block: 'header__blocks' },
                             content: [
                                 {
                                     elem: "side",
                                     elemMods: { align: "left" },
                                     content: [
                                         {
-                                            block: 'block-menu',
-                                            tag: "nav",
-                                            content: {
-                                                elem: "block-items",
-                                                tag: "ul",
-                                                content: [
-                                                    {
-                                                        elem: "item",
-                                                        tag: "li",
-                                                        content: {
-                                                            elem: "link",
-                                                            elemMods: { align: "hover" },
-                                                            tag: "a",
-                                                            attrs: {href: "#"},
-                                                            content: "Продукция и услуги"
-                                                        }
-                                                    },
-                                                    {
-                                                        elem: "item",
-                                                        tag: "li",
-                                                        content: {
-                                                            elem: "link",
-                                                            elemMods: { align: "hover" },
-                                                            tag: "a",
-                                                            attrs: {href: "#"},
-                                                            content: "Как купить"
-                                                        }
-                                                    },
-                                                    {
-                                                        elem: "item",
-                                                        tag: "li",
-                                                        content: {
-                                                            elem: "link",
-                                                            elemMods: { align: "hover" },
-                                                            tag: "a",
-                                                            attrs: {href: "#"},
-                                                            content: "О компании"
-                                                        }
-                                                    },
-                                                    {
-                                                        elem: "item",
-                                                        tag: "li",
-                                                        content: {
-                                                            elem: "link",
-                                                            elemMods: { align: "border-left" },
-                                                            tag: "a",
-                                                            attrs: {href: "#"},
-                                                            content: "Москва"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-
+                                            block: 'logo',
+                                            content: [
+                                                {
+                                                    block: 'image',
+                                                    url: "../../img/logo.svg",
+                                                    alt: "Лесол"
+                                                },
+                                                {
+                                                    elem: "nameSlogan",
+                                                    tag: "span",
+                                                    content: "Производство металлоизделий, кровли, водостоков"
+                                                }
+                                            ]
                                         }
+                                    ]
+                                },
+                                {
+                                    elem: "side",
+                                    elemMods: { align: "center" },
+                                    content: [
+                                        {
+                                            elem: "text",
+                                            tag: "span",
+                                            content: "Горячая линия"
+                                        },
+                                        {
+                                            elem: "href",
+                                            tag: "a",
+                                            url: "tel:+74951533109",
+                                            content: "+7 (495) 153-31-09"
+                                        },
+                                        {
+                                            elem: "text",
+                                            tag: "span",
+                                            content: "Звоните ежедневно, 9:00—18:00"
+                                        }
+
                                     ]
                                 },
                                 {
@@ -87,98 +159,128 @@ module.exports = {
                                     elemMods: { align: "right" },
                                     content: [
                                         {
-                                            block: "button-a",
-                                            content: {
-                                                elem: "link",
-                                                tag: "a",
-                                                attrs: { href: "#" },
-                                                content: "Заказать сейчас"
-                                            }
+                                            block: "form",
+                                            tag: "form",
+                                            attrs: { action: "/catalog/" },
+                                            content: [
+                                                {
+                                                    block: "search",
+                                                    content: [
+                                                        {
+                                                            elem: "input",
+                                                            tag: "input",
+                                                            attrs: {placeholder: "Введите наименование…", type: "search"},
+                                                        },
+                                                        {
+                                                            elem: "button",
+                                                            tag: "button",
+                                                            attrs: {type: "button"},
+                                                            content: "Найти"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
                             ]
                         }
-                    }
+                    ]
                 },
                 {
-                    block: "container",
+                    block: "fixed",
+                    attrs: {id: "navigation"},
                     content: {
-                        block: "blocks",
-                        mix: { block: 'header__blocks' },
+                        block: "nav-fixed",
+                        mix: {block: "container "},
                         content: [
                             {
-                                elem: "side",
-                                elemMods: { align: "left" },
+                                block: 'logo',
                                 content: [
                                     {
-                                        block: 'logo',
-                                        content: [
-                                            {
-                                                block: 'image',
-                                                url: "../../img/logo.svg",
-                                                alt: "Лесол"
-                                            },
-                                            {
-                                                elem: "nameSlogan",
-                                                tag: "span",
-                                                content: "Производство металлоизделий, кровли, водостоков"
-                                            }
-                                        ]
+                                        block: 'image',
+                                        mods: {logo: "fixed"},
+                                        url: "../../img/logo.svg",
+                                        alt: "Лесол"
                                     }
                                 ]
                             },
                             {
-                                elem: "side",
-                                elemMods: { align: "center" },
-                                content: [
-                                    {
-                                        elem: "text",
-                                        tag: "span",
-                                        content: "Горячая линия"
-                                    },
-                                    {
-                                        elem: "href",
-                                        tag: "a",
-                                        url: "tel:+74951533109",
-                                        content: "+7 (495) 153-31-09"
-                                    },
-                                    {
-                                        elem: "text",
-                                        tag: "span",
-                                        content: "Звоните ежедневно, 9:00—18:00"
-                                    }
+                                block: 'block-menu',
+                                mods: {margin: "top"},
+                                tag: "nav",
+                                content: {
+                                    elem: "block-items",
+                                    tag: "ul",
+                                    content: [
+                                        {
+                                            elem: "item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                elemMods: { align: "hover", color: "blue" },
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Каталог"
+                                            }
+                                        },
+                                        {
+                                            elem: "item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                elemMods: { align: "hover", color: "blue" },
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Как купить"
+                                            }
+                                        },
+                                        {
+                                            elem: "item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                elemMods: { align: "hover", color: "blue" },
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "О компании"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                block: "blocks",
+                                mods: {margin: "top"},
+                                content: {
+                                    elem: "side",
+                                    elemMods: { align: "center" },
+                                    content: [
+                                        {
+                                            elem: "href",
+                                            elemMods: { size: "m" },
+                                            tag: "a",
+                                            url: "tel:+74951533109",
+                                            content: "+7 (495) 153-31-09"
+                                        },
+                                        {
+                                            elem: "text",
+                                            tag: "span",
+                                            content: "Звоните ежедневно, 9:00—18:00"
+                                        }
 
-                                ]
+                                    ]
+                                }
                             },
                             {
-                                elem: "side",
-                                elemMods: { align: "right" },
-                                content: [
-                                    {
-                                        block: "form",
-                                        tag: "form",
-                                        attrs: { action: "/catalog/" },
-                                        content: [
-                                            {
-                                                block: "search",
-                                                content: [
-                                                    {
-                                                        elem: "input",
-                                                        tag: "input",
-                                                        attrs: {placeholder: "Введите наименование…", type: "search"},
-                                                    },
-                                                    {
-                                                        elem: "button",
-                                                        tag: "button",
-                                                        attrs: {type: "button"},
-                                                        content: "Найти"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
+                                block: "button-a",
+                                mods: {margin: "top"},
+                                content: {
+                                    elem: "link",
+                                    tag: "a",
+                                    attrs: { href: "#" },
+                                    content: "Заказать сейчас"
+                                }
                             }
                         ]
                     }
@@ -924,41 +1026,90 @@ module.exports = {
                                                 {
                                                     elem: "item",
                                                     content: {
-                                                        elem: "img",
-                                                        tag: "img",
-                                                        attrs: {src: "../../img/certificate/1.png"},
+                                                        elem: "link-img",
+                                                        tag: "a",
+                                                        attrs: {href: "#"},
+                                                        content: [
+                                                            {
+                                                                elem: "bg-img",
+                                                            },
+                                                            {
+                                                                elem: "img",
+                                                                tag: "img",
+                                                                attrs: {src: "../../img/certificate/1.png"},
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
                                                     elem: "item",
                                                     content: {
-                                                        elem: "img",
-                                                        tag: "img",
-                                                        attrs: {src: "../../img/certificate/2.jpg"},
+                                                        elem: "link-img",
+                                                        tag: "a",
+                                                        attrs: {href: "#"},
+                                                        content: [
+                                                            {
+                                                                elem: "bg-img",
+                                                            },
+                                                            {
+                                                                elem: "img",
+                                                                tag: "img",
+                                                                attrs: {src: "../../img/certificate/2.jpg"},
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
                                                     elem: "item",
                                                     content: {
-                                                        elem: "img",
-                                                        tag: "img",
-                                                        attrs: {src: "../../img/certificate/3.jpg"},
+                                                        elem: "link-img",
+                                                        tag: "a",
+                                                        attrs: {href: "#"},
+                                                        content: [
+                                                            {
+                                                                elem: "bg-img",
+                                                            },
+                                                            {
+                                                                elem: "img",
+                                                                tag: "img",
+                                                                attrs: {src: "../../img/certificate/3.jpg"},
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
                                                     elem: "item",
                                                     content: {
-                                                        elem: "img",
-                                                        tag: "img",
-                                                        attrs: {src: "../../img/certificate/4.jpg"},
+                                                        elem: "link-img",
+                                                        tag: "a",
+                                                        attrs: {href: "#"},
+                                                        content: [
+                                                            {
+                                                                elem: "bg-img",
+                                                            },
+                                                            {
+                                                                elem: "img",
+                                                                tag: "img",
+                                                                attrs: {src: "../../img/certificate/4.jpg"},
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
-                                                    elem: "item",
                                                     content: {
-                                                        elem: "img",
-                                                        tag: "img",
-                                                        attrs: {src: "../../img/certificate/5.jpg"},
+                                                        elem: "link-img",
+                                                        tag: "a",
+                                                        attrs: {href: "#"},
+                                                        content: [
+                                                            {
+                                                                elem: "bg-img",
+                                                            },
+                                                            {
+                                                                elem: "img",
+                                                                tag: "img",
+                                                                attrs: {src: "../../img/certificate/5.jpg"},
+                                                            }
+                                                        ]
                                                     }
                                                 }
                                             ]
@@ -1192,7 +1343,7 @@ module.exports = {
                                 {
                                     elem: "content",
                                     attrs: {id: "tab-3",style: "display: block"},
-                                    mix: [{ block: 'map-content', js: true }],
+                                    mix: [{ block: 'map-contents', js: true }],
                                     content: {
                                         block: "map-content",
                                         content: [
@@ -1485,19 +1636,222 @@ module.exports = {
                         },
                         {
                             elem: "block-item",
-                            content: "блок-2"
+                            content: [
+                                {
+                                    elem: "menu-title",
+                                    content: "Продукция"
+                                },
+                                {
+                                    elem: "menu",
+                                    tag: "ul",
+                                    content: [
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Водосточные системы"
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Кровля",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Профнастил",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Листовой прокат",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Фасад",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Снегозадержатели",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Рулонная сталь",
+                                            },
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             elem: "block-item",
-                            content: "блок-3"
+                            content: [
+                                {
+                                    elem: "menu-title",
+                                    content: "Услуги"
+                                },
+                                {
+                                    elem: "menu",
+                                    tag: "ul",
+                                    content: [
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Покраска металла",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Обработка металла",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Калькулятор водосточной системы",
+                                            },
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             elem: "block-item",
-                            content: "блок-4"
+                            content: [
+                                {
+                                    elem: "menu-title",
+                                    content: "О нас"
+                                },
+                                {
+                                    elem: "menu",
+                                    tag: "ul",
+                                    content: [
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Как купить",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "О компании",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Отзывы",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Контакты",
+                                            },
+                                        },
+                                        {
+                                            elem: "menu-item",
+                                            tag: "li",
+                                            content: {
+                                                elem: "link",
+                                                tag: "a",
+                                                attrs: {href: "#"},
+                                                content: "Оценить сотрудника",
+                                            },
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             elem: "block-item",
-                            content: "блок-5"
+                            content: [
+                                {
+                                    elem: "title-pay",
+                                    content: "Принимаем к оплате",
+                                },
+                                {
+                                    elem: "img-pay",
+                                    tag: "img",
+                                    attrs: {src: "../../img/shape_2.svg"}
+                                },
+                                {
+                                    elem: "img-pay",
+                                    tag: "img",
+                                    attrs: {src: "../../img/group-29.svg"}
+                                },
+                                {
+                                    elem: "img-pay",
+                                    tag: "img",
+                                    attrs: {src: "../../img/mir.png"}
+                                }
+                            ]
                         }
                     ]
                 }

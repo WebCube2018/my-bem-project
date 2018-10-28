@@ -1,0 +1,7 @@
+.block-footer__text {
+  display: block;
+    font: 12px var(--font);
+  color: var(--blue);
+  line-height: 1.67;
+  margin-bottom: 6px;
+}

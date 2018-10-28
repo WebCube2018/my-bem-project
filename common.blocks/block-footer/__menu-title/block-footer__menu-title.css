@@ -1,0 +1,6 @@
+.block-footer__menu-title {
+  font: 15px var(--font);
+  color: var(--blue);
+    margin: 33px 0 14px 0;
+  line-height: 1.4;
+}

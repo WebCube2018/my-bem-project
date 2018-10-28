@@ -1,0 +1,10 @@
+.block-footer__link {
+  display: block;
+  font: 12px var(--font);
+  color: var(--white);
+  line-height: 1.67;
+  margin-bottom: 6px;
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
+}
